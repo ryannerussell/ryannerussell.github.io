@@ -1,13 +1,15 @@
 body {
-  font-family: “Times New Roman”, serif;
+  font-family: "Times New Roman", serif;
   background-color: #f5f5f5;
   text-align: center;
   margin-top: 50px;
+}
 
-  nav {
+/* Navigation bar */
+nav {
   background: #627a8a;
   padding: 10px;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 nav a {
@@ -20,4 +22,23 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* Image + text layout */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left; /* overrides body center */
+}
+
+.intro img {
+  width: 300px;
+  height: auto;
+}
+
+.intro-text p {
+  font-size: 18px;
+  line-height: 1.6;
 }
